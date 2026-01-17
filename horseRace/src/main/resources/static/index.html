@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goose Horse Race</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>Grand Goose Derby</h1>
+
+    <div class="controls">
+        <div class="bet-panel">
+            <select id="betHorseId">
+                <option value="">Select a Horse</option>
+            </select>
+            <input type="number" id="betAmount" placeholder="Bet Amount $">
+            <button onclick="placeBet()">Place Bet</button>
+        </div>
+        <div class="race-panel">
+            <input type="number" id="raceDist" value="440">
+            <button class="race-btn" onclick="handleStartRace()">START RACE</button>
+            <button class="reset-btn" onclick="resetGame()">Reset</button>
+        </div>
+    </div>
+
+    <div id="horse-container" class="track">
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
